@@ -1,3 +1,4 @@
+package backjoon;
 
 public class Quiz4673 {
 	public static void main(String[] args) {
