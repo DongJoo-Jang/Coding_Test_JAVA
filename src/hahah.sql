@@ -160,6 +160,28 @@ CODE VARCHAR2(10)
 
 
 
+drop table customer cascade constraints;
+drop table customer cascade complat;
+drop sequence seqCustomer;
+
+select * from customer;
+create table customer(
+	customerid number primary key, 
+	id varchar2(50), 
+	name varchar2(50), 
+	password varchar2(50), 
+	postcode varchar2(50),
+	address varchar2(100), 
+	address2 varchar2(500), 
+	phone varchar2(100), 
+	email varchar2(100)
+);
+
+create sequence seqCustomer;
+
+insert into customer values(seqCustomer.NEXTVAL,'svra0945','장동주','369078','15875','경기도군포시 당동 주공아파트','209동2501호','010-2889-0937','svra0945@gmail.com');
+insert into customer values(seqCustomer.NEXTVAL,'svra1234','김은미','369078','14097','경기도 안양시 만안구','201호','010-2421-1111','kimeunmi@gmail.com');
+
 
 
 
