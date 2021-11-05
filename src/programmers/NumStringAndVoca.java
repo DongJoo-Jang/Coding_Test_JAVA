@@ -20,7 +20,7 @@ public class NumStringAndVoca {
 		s=s.replace("nine","9");
         
         answer = Integer.parseInt(s);
-		
+		 
         return answer;
     }
 	
