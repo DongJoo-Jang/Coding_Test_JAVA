@@ -1,7 +1,9 @@
 package programmers.level2;
 
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
+import java.util.List;
+
 
 public class OpenChatting {
 	public static void main(String[] args) {
@@ -13,41 +15,25 @@ public class OpenChatting {
 	}
 
 	public static String[] solution(String[] record) {
-
-		String result = "";
 		HashMap<String, String> idMap = new HashMap<String, String>();
+		List<String> decodingList = new ArrayList<>();
 		for (int i = 0; i < record.length; i++) {
 			String[] arraySplit = record[i].split(" ");
-			if(arraySplit[1].length() < 1  && arraySplit[1].length()>10) {
-				continue;
-			}
-			if (arraySplit[0].equals("Enter")) {
-				idMap.put(arraySplit[1], arraySplit[2]);
-				result += arraySplit[1] + " /Enter ";
-			} else if (arraySplit[0].equals("Leave")) {
-				result += arraySplit[1] + " /Leave ";
-			} else if (arraySplit[0].equals("Change")) {
+			if (arraySplit[0].equals("Enter") || arraySplit[0].equals("Change")) {
 				idMap.put(arraySplit[1], arraySplit[2]);
 			}
 		}
-		String[] resultSplit = result.split(" ");
-		Set<String> idSet = idMap.keySet();
-		for(int i =0 ;i< resultSplit.length;i++) {
-			for (String id : idSet) {
-				if(resultSplit[i].equals(id)){
-					resultSplit[i]= idMap.get(id);
-				}
+		for (int i = 0; i < record.length; i++) {
+			String[] arraySplit = record[i].split(" ");
+			if (arraySplit[0].equals("Enter") ) {
+				decodingList.add(idMap.get(arraySplit[1])+"´ÔÀÌ µé¾î¿Ô½À´Ï´Ù." );
+			}else if(arraySplit[0].equals("Leave") ) {
+				decodingList.add(idMap.get(arraySplit[1])+"´ÔÀÌ ³ª°¬½À´Ï´Ù." );
 			}
 		}
-		result = "";
-		for(String piece : resultSplit)
-			result += piece;
-		result = result.replace("/Enter", "´ÔÀÌ µé¾î¿Ô½À´Ï´Ù.");
-		result = result.replace("/Leave", "´ÔÀÌ ³ª°¬½À´Ï´Ù.");
-		String[] answer = result.split("\\.");
-		for (int y = 0; y < answer.length; y++) {
-			answer[y] += ".";
-		}
+		String[] answer =  new String[decodingList.size()];
+		decodingList.toArray(answer);
+
 		return answer;
 	}
 
