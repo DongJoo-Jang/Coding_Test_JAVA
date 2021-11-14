@@ -4,7 +4,7 @@ package programmers.level2;
 public class OneTwoFourCountry {
 
 	public static void main(String[] args) {
-		System.out.println(solution(40));
+		System.out.println(solution(500000000));
 	}
 
 	public static String solution(int n) {
@@ -56,8 +56,8 @@ public class OneTwoFourCountry {
 		}
 	StringBuffer strBuf = new StringBuffer(result);
 	result=strBuf.reverse().toString();
-	int resultInt = Integer.parseInt(result);
-	answer = Integer.toString(resultInt);
+	result.replace("0", "");
+	answer = result;
 	
 
 	return answer;
