@@ -18,6 +18,7 @@ public class MathGiver {
 	
 	public static  int[] solution(int[] answers) {
         
+		
 		int[] answer = null;
         int[] userOne = {1,2,3,4,5};
         int[] userTwo = {2,1,2,3,2,4,2,5};
