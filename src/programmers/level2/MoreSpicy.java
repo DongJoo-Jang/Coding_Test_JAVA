@@ -29,6 +29,7 @@ public class MoreSpicy {
 				break;
 			}
 			
+			
 			secondLow = Collections.min(scovilleList);
 			scovilleList.remove(secondLow);
 			newValue = firstLow + secondLow * 2;
