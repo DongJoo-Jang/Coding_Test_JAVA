@@ -25,7 +25,6 @@ public class MoreSpicy {
 			firstLow = Collections.min(scovilleList);
 			scovilleList.remove(firstLow);
 			if(scovilleList.isEmpty()) {
-				
 				count = -1;
 				break;
 			}
