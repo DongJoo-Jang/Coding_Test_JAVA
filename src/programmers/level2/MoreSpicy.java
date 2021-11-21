@@ -32,7 +32,7 @@ public class MoreSpicy {
 			secondLow = Collections.min(scovilleList);
 			scovilleList.remove(secondLow);
 			newValue = firstLow + secondLow * 2;
-			scovilleList.add(newValue);
+			scovilleList.add(newValue); 
 			count++;
 			min  = Collections.min(scovilleList);
 		}
