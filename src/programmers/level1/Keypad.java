@@ -9,7 +9,7 @@ public class Keypad {
 	}
 	
 	
-	public static String solution(int[] numbers, String hand) {  
+	public static String solution(int[] numbers, String hand) {   
 		String answer = "";     
 		int [][] keyTable = { 	 {1,2,3}
 								,{4,5,6} 
