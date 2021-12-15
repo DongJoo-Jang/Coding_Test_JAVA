@@ -1,16 +1,68 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GooDeeQuiz {
 
 	public static void main(String[] args) {
 		
+
+		int[] arrA = {1,3,2,1};
+		int[] arrB = {4,2,5,3};
+		//int[] arrA = {2,1};
+		//int[] arrB = {3,3};
+		System.out.println(solution3(arrA,arrB));
 		
-		System.out.println(solution1(123));
-		int[] arr = {5,3,9,13};
-		System.out.println(solution2(arr,8));
+	}
+	
+
+//	public static int solution3(int[] arrA, int[] arrB) {
+//		
+//		int result = -1;
+//		Set<Integer> setA = new HashSet<>();
+//		Set<Integer> setB = new HashSet<>();
+//		for(int i = 0 ; i < arrA.length; i++) { //Set으로 해서 중복제거
+//			setA.add(arrA[i]); 
+//			setB.add(arrB[i]);
+//		}
+//		List<Integer> listA = new ArrayList<>(setA); //작은 값부터 비교하기위 리스트화
+//		List<Integer> listB = new ArrayList<>(setB);
+//		
+//		Collections.sort(listA); // 정렬
+//		Collections.sort(listB);
+//		
+//		for(int i = 0 ;i < listA.size();i++) {  // 작은 값부터 비교
+//			if ( listB.indexOf(listA.get(i)) != -1) {
+//				result = listA.get(i);
+//				break;
+//			}
+//		}
+//	
+//		return result;
+//		
+//	}
+	
+public static int solution3(int[] arrA, int[] arrB) {
 		
+		int indexA=0;
+		int indexB=0;
+		int result = -1;
+		Arrays.sort(arrA); // 작은거부터 비교하려고 정렬
+		Arrays.sort(arrB);
+		while(indexA < arrA.length && indexB <arrB.length) { //한쪽 끝까지 갈 때 까지 비교
+			if(arrA[indexA] < arrB[indexB]) {
+				indexA++;
+			}else if((arrA[indexA] > arrB[indexB])) {
+				indexB++;
+			}else {
+				result = arrA[indexA];
+				break;
+			}
+		}		
+		return result;
 	}
 	
 	public static int solution1(int n) {
@@ -52,6 +104,7 @@ public class GooDeeQuiz {
 		return result;
 		
 	}
+	
 	
 	
 }
