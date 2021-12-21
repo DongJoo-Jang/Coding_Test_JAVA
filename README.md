@@ -1,31 +1,31 @@
 # 코딩테스트 연습문제풀이
 ## 프로그래머스 레벨1  
 - 내적  
-  주어진 두 배열의 같은 인덱스 값끼리 곲한 값의 합 구하기
+  주어진 두 배열의 같은 인덱스 값끼리 곲한 값의 합 구하기  
   문제: [프로그래머스URL](https://programmers.co.kr/learn/courses/30/lessons/70128)  
   내 풀이:programmers.level1.InnerProduct.java  
 - 키패드 누르기  
-  키패드에서 주어진 숫자들을 칠 때 사용하는 손 배열 구하기
+  키패드에서 주어진 숫자들을 칠 때 사용하는 손 배열 구하기  
   문제: [프로그래머스URL](https://programmers.co.kr/learn/courses/30/lessons/67256)  
   내 풀이:programmers.level1.Keypad.java  
-- 로또의 최고 순위와 최저 순위
-  일부 숫자가 훼손된 로또 번호가 당첨 될 수 있었던 있는 최고 순위와 최저순위 구하기 
+- 로또의 최고 순위와 최저 순위  
+  일부 숫자가 훼손된 로또 번호가 당첨 될 수 있었던 있는 최고 순위와 최저순위 구하기  
   문제: [프로그래머스URL](https://programmers.co.kr/learn/courses/30/lessons/77484)  
   내 풀이:programmers.level1.Lotto.java  
-- 완주하지 못한 선수(효율성 테스트 실패)
-  참여자 이름 배열과 완료자 이름 배열이 주어 질 때 완료하지 못한 한 사람 구하기
+- 완주하지 못한 선수(효율성 테스트 실패)  
+  참여자 이름 배열과 완료자 이름 배열이 주어 질 때 완료하지 못한 한 사람 구하기  
   문제: [프로그래머스URL](https://programmers.co.kr/learn/courses/30/lessons/42576)  
   내 풀이:programmers.level1.Maraton.java  
-- 신규 아이디 추천
-  규칙에 맞지 않는 아이디를 입력했을 때 7단계를 거처  규칙에 맞는 아이디 구하기
+- 신규 아이디 추천  
+  규칙에 맞지 않는 아이디를 입력했을 때 7단계를 거처  규칙에 맞는 아이디 구하기  
   문제: [프로그래머스URL](https://programmers.co.kr/learn/courses/30/lessons/72410)  
   내 풀이:programmers.level1.NewId.java  
-- 없는 숫자 더하기
-  0~9 까지 중 배열에서 없는 숫자 찾아서 더하기
+- 없는 숫자 더하기  
+  0~9 까지 중 배열에서 없는 숫자 찾아서 더하기  
   문제: [프로그래머스URL](https://programmers.co.kr/learn/courses/30/lessons/86051)  
   내 풀이:programmers.level1.NonNumSum.java  
-- 숫자 문자열과 영단어
-  숫자와 영단어가 섞인 문장이 주어질때 차트에 맞게 영단어를 숫자로 변환
+- 숫자 문자열과 영단어  
+  숫자와 영단어가 섞인 문장이 주어질때 차트에 맞게 영단어를 숫자로 변환  
   문제: [프로그래머스URL](https://programmers.co.kr/learn/courses/30/lessons/81301)  
   내 풀이:programmers.level1.NumStringAndVoca.java  
 ---  
